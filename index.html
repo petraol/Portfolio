@@ -12,8 +12,21 @@
 body, h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif
 }
+.crop {
+    display: inline-block;
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+    
+}
+.crop img {
+    width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+}
 .w3-row-padding img {
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    object-fit: cover;
 }
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {
@@ -200,7 +213,7 @@ header{
       <div class="row">
           <div class="column">
             <div class="card" onclick="document.getElementById('id01').style.display='block'">
-              <img src="spotify-groups.png" style="width: 100%; height: 200px; overflow: hidden">
+              <img class="crop" src="spotify-groups.png" style="width: 100%; height: 200px; overflow: hidden">
               <div class="container">
                   <h2 class="title">Spotify Groups</h2>
               </div>
@@ -209,7 +222,7 @@ header{
           
           <div class="column">
             <div class="card" onclick="document.getElementById('id02').style.display='block'">
-              <img src="multimodal.png" style="width: 100%; height: 200px; overflow: hidden">
+              <img class="crop" src="multimodal.png" style="width: 100%; height: 200px; overflow: hidden">
               <div class="container">
                 <h2 class="title">Multimodal</h2>
               </div>
@@ -218,7 +231,7 @@ header{
           
           <div class="column">
             <div class="card" onclick="document.getElementById('id03').style.display='block'">
-              <img src="mission-emission.png" style="width: 100%; height: 200px; overflow: hidden">
+              <img class="crop" src="mission-emission.png" style="width: 100%; height: 200px; overflow: hidden">
               <div class="container">
                 <h2 class="title">Mission Emission</h2>
               </div>
@@ -227,7 +240,7 @@ header{
           
           <div class="column">
             <div class="card" onclick="document.getElementById('id04').style.display='block'">
-              <img src="movie-app.png" style="width: 100%; height: 200px; overflow: hidden">
+              <img class="crop" src="movie-app.png" style="width: 100%; height: 200px; overflow: hidden">
               <div class="container">
                 <h2 class="title">Movie App</h2>
               </div>
@@ -237,9 +250,10 @@ header{
       <!---- MODAL POP UPS-->
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
-          <div class="w3-container">
+          <div class="w3-container padding-20 center">
             <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-               <img src="spotify-groups.png" class="modal"><br>
+              <h3 class="center">Spotify groups</h3>
+               <img class="crop" src="spotify-groups.png" class="modal"><br>
                 <p>In this project the task was to build a high-fidelity prototype to enhance a music product. We choose to work with spotify and try to improve it. Through several iterations of our idea, and working accordingly to the double diamond scheme we ended up with our final prduct Spotify groups. The project was created using Justinmind.</p>
                 Github: <a target = '_blank' href='https://github.com/fnoren17/Spotify-Groups'>https://github.com/fnoren17/Spotify-Groups</a><br>
                 Presentation video: <a target = '_blank' href='https://youtu.be/-G6FcEKLjrA'>https://youtu.be/-G6FcEKLjrA</a>
@@ -248,9 +262,10 @@ header{
       </div>
       <div id="id02" class="w3-modal">
         <div class="w3-modal-content">
-          <div class="w3-container">
+          <div class="w3-container padding-20 center">
             <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-               <img src="multimodal.png" class="modal"><br>
+              <h3 class="center">Multimodal</h3>
+              <img class="crop" src="multimodal.png" class="modal"><br>
               <p>A project made in Unity with VR support. We evaluated whether controller-based steering or head movement-based steering was superious in regards to efficiency and effectiveness. We found that using the head to steer was better in all regards, and caused less motion sickness than that of a controller.</p>
                 Working web-based version (laggy): <a target = '_blank' href='multimodal.html'>Multimodal project</a><br>
                 Presentation video: <a target = '_blank' href='https://youtu.be/JBwnQ7EBQ7g'>https://youtu.be/JBwnQ7EBQ7g</a>
@@ -259,9 +274,10 @@ header{
       </div>
       <div id="id03" class="w3-modal">
         <div class="w3-modal-content">
-          <div class="w3-container">
+          <div class="w3-container padding-20 center">
             <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-               <img src="mission-emission.png" class="modal"><br>
+              <h3 class="center">Mission Emission</h3> 
+              <img class="crop" src="mission-emission.png" class="modal"><br>
               <p>Our project in the Information Visualization course given at KTH. Our group took an offer from SEI to develop a prototype for visualizing emissions via nautical export from brazil. I had the role of front-end developer and UI-designer. Click the live version for more info.</p>
                 Github: <a target = '_blank' href='https://github.com/fnoren17/infovis18'>https://github.com/fnoren17/infovis18</a><br>
                 GithubIO: <a target = '_blank' href='https://fnoren17.github.io/infovis18/'>https://fnoren17.github.io/infovis18/</a>
@@ -270,9 +286,10 @@ header{
       </div>
       <div id="id04" class="w3-modal">
         <div class="w3-modal-content">
-          <div class="w3-container">
+          <div class="w3-container padding-20 center">
             <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-               <img src="movie-app.png" class="modal"><br>
+              <h3 class="center">Movie App</h3>
+               <img class="crop" src="movie-app.png" class="modal"><br>
               <p>A project in a dynamic web course. The idea of the product is to save movies of intrest to your account and mark them as seen or not. And also be able to see what other users have on their lists.</p>
               Github: <a target = '_blank' href='https://github.com/petraol/movieApp'>https://github.com/petraol/movieApp</a><br>
           </div>
