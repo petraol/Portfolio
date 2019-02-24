@@ -1,340 +1,152 @@
-<!DOCTYPE html>
-<html>
-<title>Petra Olssons Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script include="style.css"></script>
-    <style>
-body, h1,h2,h3,h4,h5,h6 {
-    font-family: "Montserrat", sans-serif
-}
-.crop {
-    display: inline-block;
-    height: 150px;
-    width: auto;
-    overflow: hidden;
-    
-}
-.crop img {
-    width: 100%;
-    margin-left: auto;
-	margin-right: auto;
-}
-.w3-row-padding img {
-    margin-bottom: 12px;
-    object-fit: cover;
-}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {
-    width: 120px;
-    background: #27bec2;
-}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {
-    margin-left: 120px
-}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {
-    #main {
-        margin-left: 0
-    }
-}
-        .light{
-            background-color: #fbfaf8;
-        }
-.container{
-    content:"";display:table;clear:both
-}
-.padding-32{
-    padding-top:32px!important;padding-bottom:32px!important
-}
-.padding-20{
-    padding: 20px;      
-}        
-.center{
-    text-align:center
-}
-padding-large{
-    padding:12px 20px!important;
-    background-color: #fbfaf8;
-}
-header{
-    width: 100%;
-    min-height: 300px;
-    background-color: aqua;
-}
-.wave{
-    position: relative;
-    background: linear-gradient(90deg, #27bec2, #de91ff);
-}
-.wave:before {
-    content:'';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 140px;
-    background: url(wave.png);
-    background-size: cover;
-    background-repeat: : no-repeat;
-}
-.white-text{
-      color:white;      
-}
+<!doctype html>
+<html lang="eng">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Petra Olsson</title>
+    </head>
+    <body>
+        <!-- About section start -->
+        <div id="about" class="overlay" style="color: white">
+            <img id="aboutpicture" src="IMG_20190220_131941.jpg">
+            <div id="title">Petra Olsson</div>
+            <div id="subtitle">M.Sc student | Interactive media technology | KTH</div>
+            <div id="description">
+                Welcome to my portfolio! I'm a M.Sc. student at KTH currently on my fifth year at the Media Technology program, and proceeding with my master in Interactive media technology with Visual Media as an individual track. This spring I'm doing my master thesis at Adverty AB. You can here in my portfolio see some of the projects I've done in the latter years of my studies. You can also read more about mys tudies and previous experiences in my <a href="CV - Petra Olsson.pdf" download>CV!</a>
+                <a href="CV - Petra Olsson.pdf" download></a>
+            </div>
+            <div id="contacts">
+                <div id="icon1">Contact me!</div>
+                <i id="icon2" class="fa fa-map-marker fa-fw  w3-xxlarge w3-margin-right"></i>
+                <i id="icon3" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+                <i id="icon4" class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/petra-olsson-b0687215a/"></a>
+                <i id="icon5" class="fa fa-github fa-fw w3-xxlarge w3-margin-right"></i><a href="https://github.com/petraol"></a>
+            </div>
+        </div>
+        <!-- About section end -->
         
-        /* Three columns side by side */
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-    .wave:before {
-        content:'';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 90px;
-        background: url(wave.png);
-        background-size: cover;
-        background-repeat: : no-repeat;
-    }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-    padding: 0 16px;
-    text-align: center;
-}
-
-/* Clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    font-size: 20px;
-    color: grey;
-}
-.modal{
-    width: 70%; 
-    height: 300px; 
-    overflow: hidden;
-    margin-left: 15%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-    </style>
-<body class="light">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <div style="padding:5%"><img src="cv_liten.jpg" style="width:100%; border: 3px solid white; border-radius: 50%;"></div>
-    
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">
-    <i class="fa fa-inverse fa-home w3-xxlarge"></i>
-    <p class="white-text">HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large hover-turquoise">
-    <i class="fa fa-inverse fa-user w3-xxlarge"></i>
-    <p class="white-text">ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large hover-turquoise">
-    <i class="fa fa-inverse fa-eye w3-xxlarge"></i>
-    <p class="white-text">PROJETS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large hover-turquoise">
-    <i class="fa fa-inverse fa-envelope w3-xxlarge"></i>
-    <p class="white-text">CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small w3-text-grey" style="background: #fbfaf8">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="container padding-32 center wave white-text" id="home">
-    <h1>Welcome to my portfolio!</h1>
-    <p>Petra Olsson - Mediatechnology student</p>
-  </header>
-    
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64 padding-20" id="about">
-    <h2>About me</h2>
-    <p>I'm a M.Sc. student at KTH currently on my fourth year at the Media Technology program, and proceeding with my master in Interactive media technology with Visual Media as an individual track. I've grown interest in the UX and front-end developing section through my years at KTH. You can here in my portfolio see some of the projects I've done in the latter years of my studies.
-    </p>
-
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <a href="CV - Petra Olsson.pdf" download><i class="fa fa-download"></i> Link to resume</a>
-    </button>
-    
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="photos">
-    <h2>My Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-      <div class="row">
-          <div class="column">
-            <div class="card" onclick="document.getElementById('id01').style.display='block'">
-              <img class="crop" src="spotify-groups.png" style="width: 100%; height: 200px; overflow: hidden">
-              <div class="container">
-                  <h2 class="title">Spotify Groups</h2>
-              </div>
+        
+        <!-- Projects section start -->
+        <div id="projects">
+            <div id="projectPlatniklas" class="project">
+                <img class="projectPic left" src="AGI18-tekniskamuseet-linneaholm-8.jpg"><br>
+                <div class="title">Plåtniklas</div>
+                <div class="role">Interaction programmer | Modeler</div>
+                <div class="description">Plåtniklas is a game that integrates both VR and AR, where the two worlds co-exist on a one to one scale. Thus the AR player can see the VR player, and vice versa. They will see the same environment, and the changes made to that environment. Both of them can interact with the world and its objects, as well as with each other. This is a project which ran from mid september 2018 to december 2018 and is part of the course Advanced graphics and interaction at the Royal Institute of Technology. The project is developed by using Unity, HTC Vive and ARKit</div>
+                <div class="links"> 
+                    Website: <a target = '_blank' href="http://platniklas.com">http://platniklas.com</a>
+                </div>
             </div>
-          </div>
-          
-          <div class="column">
-            <div class="card" onclick="document.getElementById('id02').style.display='block'">
-              <img class="crop" src="multimodal.png" style="width: 100%; height: 200px; overflow: hidden">
-              <div class="container">
-                <h2 class="title">Multimodal</h2>
-              </div>
+            
+            <div id="projectSoarAndFall" class="project">
+                <img class="projectPic right" src="soar-and-fall.png"><br>
+                <div class="title">Soar & Fall</div>
+                <div class="role">Project Leader | Modeler | Interaction programmer</div>
+                <div class="description">This is a small game demo developed in a team of 5 members. </div>
+                <div class="links"> 
+                    Website: <a target = '_blank' href='https://kasperii.github.io/soarandfall/'>https://kasperii.github.io/soarandfall/</a>
+                </div>
             </div>
-          </div>
-          
-          <div class="column">
-            <div class="card" onclick="document.getElementById('id03').style.display='block'">
-              <img class="crop" src="mission-emission.png" style="width: 100%; height: 200px; overflow: hidden">
-              <div class="container">
-                <h2 class="title">Mission Emission</h2>
-              </div>
+            
+            <div id="projectSpotify" class="project">
+                <img class="projectPic left" src="spotify-groups.png"><br>
+                <div class="title">Spotify groups</div>
+                <div class="role">Designer</div>
+                <div class="description">In this project the task was to build a high-fidelity prototype to enhance a music product. We choose to work with spotify and try to improve it. Through several iterations of our idea, and working accordingly to the double diamond scheme we ended up with our final prduct Spotify groups. The project was created using Justinmind.</div>
+                <div class="links"> 
+                    Github: <a target = '_blank' href='https://github.com/fnoren17/Spotify-Groups'>https://github.com/fnoren17/Spotify-Groups</a>
+                    Presentation video: <a target = '_blank' href='https://youtu.be/-G6FcEKLjrA'>https://youtu.be/-G6FcEKLjrA</a>
+                </div>
             </div>
-          </div>
-          
-          <div class="column">
-            <div class="card" onclick="document.getElementById('id04').style.display='block'">
-              <img class="crop" src="movie-app.png" style="width: 100%; height: 200px; overflow: hidden">
-              <div class="container">
-                <h2 class="title">Movie App</h2>
-              </div>
+            
+            <div id="projectMultimodal" class="project">
+                <img class="projectPic right" src="multimodal.png"><br>
+                <div class="title">Multimodal</div>
+                <div class="role">Developer</div>
+                <div class="description">A project made in Unity with VR support. We evaluated whether controller-based steering or head movement-based steering was superious in regards to efficiency and effectiveness. We found that using the head to steer was better in all regards, and caused less motion sickness than that of a controller.</div>
+                <div class="links"> 
+                    Working web-based version (laggy): <a target = '_blank' href='multimodal.html'>Multimodal project</a>
+                    Presentation video: <a target = '_blank' href='https://youtu.be/JBwnQ7EBQ7g'>https://youtu.be/JBwnQ7EBQ7g</a>
+                </div>
             </div>
-          </div>
-      </div>
-      <!---- MODAL POP UPS-->
-      <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container padding-20 center">
-            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-              <h3 class="center">Spotify groups</h3>
-               <img class="crop" src="spotify-groups.png" class="modal"><br>
-                <p>In this project the task was to build a high-fidelity prototype to enhance a music product. We choose to work with spotify and try to improve it. Through several iterations of our idea, and working accordingly to the double diamond scheme we ended up with our final prduct Spotify groups. The project was created using Justinmind.</p>
-                Github: <a target = '_blank' href='https://github.com/fnoren17/Spotify-Groups'>https://github.com/fnoren17/Spotify-Groups</a><br>
-                Presentation video: <a target = '_blank' href='https://youtu.be/-G6FcEKLjrA'>https://youtu.be/-G6FcEKLjrA</a>
-          </div>
+            
+            <div id="projectMissionEmission" class="project">
+                <img class="projectPic left" src="mission-emission.png"><br>
+                <div class="title">Mission Emission</div>
+                <div class="role">Designer</div>
+                <div class="description">Our project in the Information Visualization course given at KTH. Our group took an offer from SEI to develop a prototype for visualizing emissions via nautical export from brazil. I had the role of front-end developer and UI-designer. Click the live version for more info.</div>
+                <div class="links"> 
+                    Github: <a target = '_blank' href='https://github.com/fnoren17/infovis18'>https://github.com/fnoren17/infovis18</a>
+                    GithubIO: <a target = '_blank' href='https://fnoren17.github.io/infovis18/'>https://fnoren17.github.io/infovis18/</a>
+                </div>
+            </div>
+            
+            <div id="projectMoviaApp" class="project">
+                <img class="projectPic right" src="movie-app.png"><br>
+                <div class="title">Movie App</div>
+                <div class="role">Developer | Designer</div>
+                <div class="description">>A project in a dynamic web course. The idea of the product is to save movies of intrest to your account and mark them as seen or not. And also be able to see what other users have on their lists.</div>
+                <div class="links"> 
+                    Github: <a target = '_blank' href='https://github.com/petraol/movieApp'>https://github.com/petraol/movieApp</a><br>
+                </div>
+            </div>
+        
         </div>
-      </div>
-      <div id="id02" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container padding-20 center">
-            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-              <h3 class="center">Multimodal</h3>
-              <img class="crop" src="multimodal.png" class="modal"><br>
-              <p>A project made in Unity with VR support. We evaluated whether controller-based steering or head movement-based steering was superious in regards to efficiency and effectiveness. We found that using the head to steer was better in all regards, and caused less motion sickness than that of a controller.</p>
-                Working web-based version (laggy): <a target = '_blank' href='multimodal.html'>Multimodal project</a><br>
-                Presentation video: <a target = '_blank' href='https://youtu.be/JBwnQ7EBQ7g'>https://youtu.be/JBwnQ7EBQ7g</a>
-      </div>
+        <!-- Projects section end -->
+        
+        
+        <!-- Skills and Education start -->
+        <div id="education">
+            <div id="educationTitle">Education</div>
+            <div id="educationTrack">Master of Science in Interactive Media Technology (Ongoing)</div>
+            <div id="educationInfo">
+                Track Visual Media<br>
+                August 2017- June 2019<br>
+                KTH Royal Institute of Technology, Stockholm<br>
+            </div>
+            <div id="educationTrack">Bachelor of Science in Interactive Media Technology</div>
+            <div id="educationInfo">
+                August 2014 - June 2017<br>
+                KTH Royal Institute of Technology, Stockholm
+            </div>
         </div>
-      </div>
-      <div id="id03" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container padding-20 center">
-            <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-              <h3 class="center">Mission Emission</h3> 
-              <img class="crop" src="mission-emission.png" class="modal"><br>
-              <p>Our project in the Information Visualization course given at KTH. Our group took an offer from SEI to develop a prototype for visualizing emissions via nautical export from brazil. I had the role of front-end developer and UI-designer. Click the live version for more info.</p>
-                Github: <a target = '_blank' href='https://github.com/fnoren17/infovis18'>https://github.com/fnoren17/infovis18</a><br>
-                GithubIO: <a target = '_blank' href='https://fnoren17.github.io/infovis18/'>https://fnoren17.github.io/infovis18/</a>
-          </div>
+        
+        
+        <div id="skills">
+            <div id="skillsTitle">Skills</div>
+            <div id="skillsInfo">HCI, UX, Interaction Design</div>
+            <div id="skillsTrack">Programming</div>
+            <div id="skillsInfo">JavaScript, C#, HTML, CSS, Python</div>
+            <div id="skillsTrack">Design</div>
+            <div id="skillsInfo">Interface prototyping, Persona & Scenario, Storyboarding</div>
+            <div id="skillsTrack">Research</div>
+            <div id="skillsInfo">Usability Testing, Interview, Survey</div>
+            <div id="skillsTrack">Tools</div>
+            <div id="skillsInfo">Unity, Adobe Illustrator</div>
+            <div id="skillsTrack">Languages</div>
+            <div id="skillsInfo">Swedish, English</div>
+        
         </div>
-      </div>
-      <div id="id04" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container padding-20 center">
-            <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-              <h3 class="center">Movie App</h3>
-               <img class="crop" src="movie-app.png" class="modal"><br>
-              <p>A project in a dynamic web course. The idea of the product is to save movies of intrest to your account and mark them as seen or not. And also be able to see what other users have on their lists.</p>
-              Github: <a target = '_blank' href='https://github.com/petraol/movieApp'>https://github.com/petraol/movieApp</a><br>
-          </div>
+
+        <!-- Skills and Education end -->
+        
+        
+        <!-- Footer start -->
+        <div id="footer" class="overlay2">
+            <img src="DSC_3225.jpg" id="footerPic">
+            <div id="footerContact">Contact me!</div>
+            <div id="footerInfo">Send my an e-mail or a LinkedIn message if you want to hear more about me, or my projects. Looking forward to hear from you!</div>
+            <div id="footerIcons">
+                <i id="icon2" class="fa fa-map-marker fa-fw  w3-xxlarge w3-margin-right"></i>
+                <i id="icon3" class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+                <i id="icon4" class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/petra-olsson-b0687215a/"></a>
+                <i id="icon5" class="fa fa-github fa-fw w3-xxlarge w3-margin-right"></i><a href="https://github.com/petraol"></a>
+            </div>
         </div>
-      </div>
-    <!--div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="spotify-groups.png" style="width:100%">
-        <img src="multimodal.png" style="width:100%">
-        <img src="mission-emission.png" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div-->
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  
-  
-    <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2>Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw  w3-xxlarge w3-margin-right"></i> Stockholm</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: petraolsson1995@gmail.com</p>
-      <p><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/petra-olsson-b0687215a/">Petra Olsson</a></p>
-      <p><i class="fa fa-github fa-fw w3-xxlarge w3-margin-right"></i><a href="https://github.com/petraol">Petra Olsson</a></p>
-    </div><br>
-  <!-- End Contact Section -->
-  </div>
-    
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
-</body>
+        <!-- Footer end -->
+        
+    </body>
 </html>
