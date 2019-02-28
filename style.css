@@ -321,22 +321,27 @@ body {
         grid-row: 2;
         padding: 1%;
     }
+    .picText {
+        grid-row: 3;
+        padding: none;
+        font-size: 8px;
+    }
     .title {
         grid-row: 1;
         padding: 1%;
     }
     .role {
-        grid-row: 3;
+        grid-row: 4;
         padding: 1%;
     }
     .description{
         font-size: 12px;
-        grid-row: 4;
+        grid-row: 5;
         padding: 1%;
     }
     .links {
         font-size: 12px;
-        grid-row: 5;
+        grid-row: 6;
         padding: 1%;
     }
     
