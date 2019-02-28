@@ -25,24 +25,6 @@ body {
     background-image: linear-gradient(to bottom right, #ff7c54, #660025);
 }
 
-a:link {
-    color: white; 
-    background-color: transparent; 
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightcyan;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 .topnav {
   overflow: hidden;
   background-color: #333;
