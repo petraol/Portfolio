@@ -9,27 +9,6 @@
         <title>Petra Olsson</title>
     </head>
     <body>
-        <!-- Menu start
-        <div class="topnav" id="myTopnav">
-          <a href="#about" class="active">About</a>
-          <div class="dropdown">
-            <button class="dropbtn">Projects 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#projectPlatniklas">Plåtniklas</a>
-                <a href="#projectSoarAndFall">Soar & Fall</a>
-                <a href="#projectSpotify">Spotify groups</a>
-                <a href="#projectMultimodal">Multimodal</a>
-                <a href="#projectMissionEmission">Mission Emission</a>
-                <a href="#projectMoviaApp">Movie App</a>
-            </div>
-          </div> 
-            <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-        Menu end -->
         
         <!-- About section start -->
         <div id="about" class="overlay" style="color: white">
@@ -48,6 +27,30 @@
         </div>
         <!-- About section end -->
         
+        <!-- Menu start -->
+        <div id="menu">
+            <div class="topnav toppennav" id="myTopnav">
+              <a href="https://petraol.github.io/Portfolio/">Home</a>
+              <a href="#about">About</a>
+              <div class="dropdown">
+                <button class="dropbtn">Projects 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#projectPlatniklas">Plåtniklas</a>
+                    <a href="#projectSoarAndFall">Soar & Fall</a>
+                    <a href="#projectSpotify">Spotify groups</a>
+                    <a href="#projectMultimodal">Multimodal</a>
+                    <a href="#projectMissionEmission">Mission Emission</a>
+                    <a href="#projectMoviaApp">Movie App</a>
+                </div>
+              </div> 
+                <a href="#education">Education</a>
+              <a href="#skills">Skills</a>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+        <!-- Menu end -->
         
         <!-- Projects section start -->
         <div id="projects">
@@ -167,5 +170,29 @@
             </div>
         </div>
         <!-- Footer end -->
+        
+        <script>
+            var header = document.getElementById("about");
+            var sticky = header.offsetHeight;
+            
+            window.onscroll = function() {stayOnTop()};
+
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav toppennav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav toppennav";
+                }
+            }
+            function stayOnTop() {
+                var x = document.getElementById("myTopnav");
+                if (window.pageYOffset > sticky - x.offsetHeight) {
+                    x.className = "topnav bottomnav";
+                } else {
+                    x.className = "topnav toppennav";
+                }
+            }
+        </script>
     </body>
 </html>
