@@ -175,6 +175,11 @@
             var header = document.getElementById("about");
             var sticky = header.offsetHeight;
             
+            window.addEventListener("hashchange", (e) => {
+                console.log(e)
+                document.getElementById(window.location.hash.split("#")[1]).dispatchEvent(new Event("mouseover"))
+            }, false);
+            
             window.onscroll = function() {stayOnTop()};
 
             function myFunction() {
@@ -193,6 +198,7 @@
                     x.className = "topnav toppennav";
                 }
             }
+            
         </script>
     </body>
 </html>
