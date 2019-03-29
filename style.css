@@ -89,7 +89,10 @@ body {
   color: white;
 }
 
-
+.dropdown-content a:hover {
+  background-color: #b8433f;
+  color: white;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;

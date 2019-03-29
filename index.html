@@ -199,6 +199,23 @@
                 }
             }
             
+                if (!$('html').hasClass('no-touch')) { /*Execute code only on a touch screen device*/
+     
+
+                $(document).bind('touchstart', function(e) {
+                        $("#menu dropdown").fadeOut(300); /*Close filters drop-downs if user taps ANYWHERE in the page*/
+                }); 
+
+                $('#menu dropdown').bind('touchstart', function(event){
+                        event.stopPropagation(); /*Make all touch events stop at the #filter1 ul.children container element*/
+                });
+
+                $("#menu dropdownn a").click(function () {
+                      $("#menu dropdownn").fadeOut(300); /*Close filters drop-downs if user taps on any link in drop-down*/
+                });
+
+            }
+            
         </script>
     </body>
 </html>
