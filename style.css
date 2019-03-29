@@ -317,7 +317,7 @@ body {
     
     .topnav.responsive {}
     .topnav.responsive .icon {
-        position: absolute;
+        
         right: 0;
         top: 0;
     }
