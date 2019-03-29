@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Petra Olsson</title>
+        <link rel="shortcut icon" src="DSC_3225.jpg" type="image/x-icon" />
     </head>
     <body>
         
@@ -59,12 +60,53 @@
                 <p class="projectPic left picText" style="align-self: end;">Photo by: Linnea Holm</p>
                 <div class="title">Plåtniklas</div>
                 <div class="role">Interaction programmer | Modeler</div>
-                <div class="description">Plåtniklas is a game that integrates both VR and AR, where the two worlds co-exist on a one to one scale. Thus the AR player can see the VR player, and vice versa. They will see the same environment, and the changes made to that environment. Both of them can interact with the world and its objects, as well as with each other. To read more about the project, see videos and photos, please visit: <a target = '_blank' href="http://platniklas.com">http://platniklas.com</a>.
+                <div class="description">Plåtniklas is a game that integrates both VR and AR, where the two worlds co-exist on a one to one scale. Thus the AR player can see the VR player, and vice versa. They will see the same environment, and the changes made to that environment. Both of them can interact with the world and its objects, as well as with each other. You can see a selection of pictures and videos in the drop-down below, or please visit the website for more information!
                 <br>For this project I was mostly responsible for devloping the synchronisation of the VR and AR world, enabling them to see the same objects in the exact same positions in world space. As well as Modeler, modeling the Helicopter and animation, and developing parts of the game mechanic.
                 <br>This project was developed togheter with Olivia Bengtsson, Viktor Ceder, Anton Martinsson and Linnéa Granlund.
                 </div>
                 <div class="links"> 
                     Website: <a target = '_blank' href="http://platniklas.com">http://platniklas.com</a>
+                </div>
+                <div class="seemore">
+                    <input id="toggle" type="checkbox" unchecked>
+                    <label for="toggle">See more photos and video!</label>
+                    <div id="expand">
+                        <section>
+                            <iframe src="https://www.youtube.com/embed/n3eTraMPorY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width=450 height=250></iframe>
+                            <br>
+                            <br>
+                            
+                            <!-- The grid: four columns -->
+                            <div class="row">
+                              <div class="column">
+                                <img src="AGI18-tekniskamuseet-linneaholm-8KVADRAT.jpg" alt="Dad and son playing. Photo by: Linnea Holm" onclick="myOtherFunction(this);" width="100%">
+                              </div>
+                              <div class="column">
+                                <img src="smashing.png" alt="First time world sync is functioning!" onclick="myOtherFunction(this);" width="100%">
+                              </div>
+                                <div class="column">
+                                <img src="platniklasface.jpg" alt="The face of PlatNiklas on top of player." onclick="myOtherFunction(this);" width="100%">
+                              </div>
+                                <div class="column">
+                                <img src="crrokedcity.jpg" alt="At the time the position was functioning, but not the rotation." onclick="myOtherFunction(this);" width="100%">
+                              </div>
+                            </div>
+                            
+                            <!-- The expanding image container -->
+                            <div class="container">
+                              <!-- Close the image -->
+                              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                              <!-- Expanded image -->
+                              <img id="expandedImg" style="width:50%">
+
+                              <!-- Image text -->
+                              <div id="imgtext"></div>
+                            </div>
+
+                            
+                        </section>
+                    </div>
                 </div>
             </div>
             
@@ -209,6 +251,19 @@
                 } else {
                     x.className = "topnav toppennav";
                 }
+            }
+            
+            function myOtherFunction(imgs) {
+              // Get the expanded image
+              var expandImg = document.getElementById("expandedImg");
+              // Get the image text
+              var imgText = document.getElementById("imgtext");
+              // Use the same src in the expanded image as the image being clicked on from the grid
+              expandImg.src = imgs.src;
+              // Use the value of the alt attribute of the clickable image as text inside the expanded image
+              imgText.innerHTML = imgs.alt;
+              // Show the container element (hidden with CSS)
+              expandImg.parentElement.style.display = "block";
             }
             
         </script>

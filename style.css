@@ -106,7 +106,6 @@ label {
   display: block;
   padding: 0.5em;
   text-align: center;
-  border-bottom: 1px solid #CCC;
   color: #666;
 }
 label:hover {
@@ -133,10 +132,63 @@ section {
   padding: 0 20px;
 }
 #toggle:checked ~ #expand {
-  height: 250px;
+  height: auto;
 }
 #toggle:checked ~ label::before {
   content: "-";
+}
+
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 22%;
+    padding: 5px;
+    align-self: baseline;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  left: 26%;
+    position: absolute;
+    bottom: 15px;
+  color: white;
+  font-size: 10px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right:26%;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 
@@ -237,6 +289,15 @@ section {
         grid-column: 2;
         font-size: 15px;
         padding: 1% 5% 1% 5%;
+    }
+    .seemore {
+        grid-row: 7;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #expand {
+        text-align: center;  
+        display: block;
     }
     
     #education {
@@ -414,6 +475,10 @@ section {
         font-size: 12px;
         grid-row: 6;
         padding: 1%;
+    }
+    .seemore {
+        grid-row: 7;
+        font-size: 14px;
     }
     
     #education {
