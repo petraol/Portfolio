@@ -68,43 +68,22 @@
                     Website: <a target = '_blank' href="http://platniklas.com">http://platniklas.com</a>
                 </div>
                 <div class="seemore">
-                    <input id="toggle" type="checkbox" unchecked>
-                    <label for="toggle">See more photos and video!</label>
-                    <div id="expand">
+                    <input id="toggle1" type="checkbox" unchecked>
+                    <label for="toggle1">See more photos and videos of Plåtniklas!</label>
+                    <div id="expand1">
                         <section>
-                            <iframe src="https://www.youtube.com/embed/n3eTraMPorY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width=450 height=250></iframe>
+                            <iframe src="https://www.youtube.com/embed/n3eTraMPorY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width=100% height=250></iframe>
                             <br>
                             <br>
                             
                             <!-- The grid: four columns -->
-                            <div class="row">
-                              <div class="column">
-                                <img src="AGI18-tekniskamuseet-linneaholm-8KVADRAT.jpg" alt="Dad and son playing. Photo by: Linnea Holm" onclick="myOtherFunction(this);" width="100%">
-                              </div>
-                              <div class="column">
-                                <img src="smashing.png" alt="First time world sync is functioning!" onclick="myOtherFunction(this);" width="100%">
-                              </div>
-                                <div class="column">
-                                <img src="platniklasface.jpg" alt="The face of PlatNiklas on top of player." onclick="myOtherFunction(this);" width="100%">
-                              </div>
-                                <div class="column">
-                                <img src="crrokedcity.jpg" alt="At the time the position was functioning, but not the rotation." onclick="myOtherFunction(this);" width="100%">
-                              </div>
+                            <div class="gallery">
+                                <img src="AGI18-tekniskamuseet-linneaholm-8KVADRAT.jpg" class="gallerypic">
+                                <img src="crrokedcity.jpg" class="gallerypic">
+                                <img src="platniklasface.jpg" class="gallerypic">
+                                <img src="smashing.png" class="gallerypic">
                             </div>
-                            
-                            <!-- The expanding image container -->
-                            <div class="container">
-                              <!-- Close the image -->
-                              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-                              <!-- Expanded image -->
-                              <img id="expandedImg" style="width:50%">
-
-                              <!-- Image text -->
-                              <div id="imgtext"></div>
-                            </div>
-
-                            
+                                
                         </section>
                     </div>
                 </div>
@@ -114,12 +93,35 @@
                 <img class="projectPic right" src="soar-and-fall.png"><br>
                 <div class="title">Soar & Fall</div>
                 <div class="role">Project Leader | Modeler | Interaction programmer</div>
-                <div class="description">Soar & Fall is a slowpace, exploritative game set in a broken world high up in the clouds. The aim of the game is to solve small puzzles to make your way through all of the soaring islands. This project will be part of the permanent exhibit Play Beyond Play at Tekniska museet in Stockholm from May 2019. To read more about the project, see videos and photos, please visit the website!
+                <div class="description">Soar & Fall is a slowpace, exploritative game set in a broken world high up in the clouds. The aim of the game is to solve small puzzles to make your way through all of the soaring islands. This project will be part of the permanent exhibit Play Beyond Play at Tekniska museet in Stockholm from May 2019. To read more about the project please visit the website or look at the videos and pictures in the dropdown!
                 <br>In this project I took on the roll as the project leader, divding work in an agile manner. I also operated as a modeler, designing parts of the objects in the world. Pay extra attention to the growing flower which is modeled and animated. And also developed alot of the gameplay interactions.
                 <br>This project was developed togheter with Kasper Karlgren, Dúi Ardal, Julien Rouault and Axel Soll.
                 </div>
                 <div class="links"> 
                     Website: <a target = '_blank' href='https://kasperii.github.io/soarandfall/'>https://kasperii.github.io/soarandfall/</a>
+                </div>
+                <div class="seemore">
+                    <input id="toggle2" type="checkbox" unchecked>
+                    <label for="toggle2">See more photos and videos of Soar & Fall!</label>
+                    <div id="expand2">
+                        <section>
+                            <iframe src="https://player.vimeo.com/video/309386452" width=100% height=250 frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            <br>
+                            <br>
+                            
+                            <!-- The grid: four columns -->
+                            <div class="gallery">
+                                <img src="soar-and-fall.png" class="gallerypic">
+                                <video controls autoplay muted loop class="gallerypic">
+                                    <source src="VID_20181129_095334.mp4">
+                                </video>
+                                
+                                <img src="tent.png" class="gallerypic">
+                                <img src="ropebridge.png" class="gallerypic">
+                            </div>
+                            
+                        </section>
+                    </div>
                 </div>
             </div>
             
@@ -133,7 +135,15 @@
                 </div>
                 <div class="links"> 
                     Github: <a target = '_blank' href='https://github.com/fnoren17/Spotify-Groups'>https://github.com/fnoren17/Spotify-Groups</a>
-                    <br>Presentation video: <a target = '_blank' href='https://youtu.be/-G6FcEKLjrA'>https://youtu.be/-G6FcEKLjrA</a>
+                </div>
+                <div class="seemore">
+                    <input id="toggle3" type="checkbox" unchecked>
+                    <label for="toggle3">See video of Spotify groups!</label>
+                    <div id="expand3">
+                        <section>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/-G6FcEKLjrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </section>
+                    </div>
                 </div>
             </div>
             
@@ -144,8 +154,14 @@
                 <div class="description">In this project we evaluated diffrent controller and steering possibilties in virtual reality. We evaluated whether controller-based steering or head movement-based steering was superious in regards to efficiency and effectiveness. We found that using the head to steer was better in all regards, and caused less motion sickness than that of a controller. We tested the steering alternatives through a flight simulator. Please have a look at the cool video!
                 <br> This project was developed toghether with Felix Norén, Erik Lindström and Anton Martinsson.
                 </div>
-                <div class="links"> 
-                    Presentation video: <a target = '_blank' href='https://youtu.be/JBwnQ7EBQ7g'>https://youtu.be/JBwnQ7EBQ7g</a>
+                <div class="seemore">
+                    <input id="toggle4" type="checkbox" unchecked>
+                    <label for="toggle4">See video of Multimodal flight simulator!</label>
+                    <div id="expand4">
+                        <section>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JBwnQ7EBQ7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </section>
+                    </div>
                 </div>
             </div>
             

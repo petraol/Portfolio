@@ -98,6 +98,10 @@ body {
   display: block;
 }
 
+
+
+
+
 input {
   display: none;
   visibility: hidden;
@@ -140,57 +144,67 @@ section {
 
 
 
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 22%;
-    padding: 5px;
-    align-self: baseline;
+#expand1 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle1:checked ~ #expand1 {
+  height: auto;
+}
+#toggle1:checked ~ label::before {
+  content: "-";
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+#expand2 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle2:checked ~ #expand2 {
+  height: auto;
+}
+#toggle2:checked ~ label::before {
+  content: "-";
 }
 
-.column img:hover {
-  opacity: 1;
+#expand3 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle3:checked ~ #expand3 {
+  height: auto;
+}
+#toggle3:checked ~ label::before {
+  content: "-";
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#expand4 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+#toggle4:checked ~ #expand4 {
+  height: auto;
+}
+#toggle4:checked ~ label::before {
+  content: "-";
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: relative;
-  display: none;
-}
 
-/* Expanding image text */
-#imgtext {
-  left: 26%;
-    position: absolute;
-    bottom: 15px;
-  color: white;
-  font-size: 10px;
-}
 
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right:26%;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+.gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-
+.gallerypic {
+    padding: 5%;
+    width: 90%;
+    text-align: center;
+    justify-self: center;   
+    align-self: center;
+}
 
 
 
