@@ -84,20 +84,9 @@ body {
     position: relative;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #b8433f;
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #b8433f;
-  color: white;
-}
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 
 
@@ -262,6 +251,17 @@ section {
     }
     
     
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #b8433f;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #b8433f;
+  color: white;
+}
+
+
     .project {
         display: grid;
         grid-template-columns: 25% 50% 25%;
