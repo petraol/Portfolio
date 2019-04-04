@@ -29,19 +29,20 @@
         <!-- About section end -->
         
         <!-- Menu start -->
-        <div id="menu">
+        <div id="menudesktop">
             <div class="topnav toppennav" id="myTopnav">
               <a href="#about">Home</a>
               <div class="dropdown">
-                <button class="dropbtn">Projects 
+                <button class="dropbtn"  onclick="openMenu()">Projects 
                   <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#projectPlatniklas">Plåtniklas</a>
-                    <a href="#projectSoarAndFall">Soar & Fall</a>
-                    <a href="#projectSpotify">Spotify groups</a>
-                    <a href="#projectMultimodal">Multimodal</a>
-                    <a href="#projectMissionEmission">Mission Emission</a>
+                <div id="dropdown-content">
+                    <p id="projectTitle">Projects:</p>
+                    <a href="#projectPlatniklas" onclick="closeMenu()">Plåtniklas</a>
+                    <a href="#projectSoarAndFall" onclick="closeMenu()">Soar & Fall</a>
+                    <a href="#projectSpotify" onclick="closeMenu()">Spotify groups</a>
+                    <a href="#projectMultimodal" onclick="closeMenu()">Multimodal</a>
+                    <a href="#projectMissionEmission" onclick="closeMenu()">Mission Emission</a>
                     <!--a href="#projectMoviaApp">Movie App</a-->
                 </div>
               </div> 
@@ -51,6 +52,7 @@
             </div>
         </div>
         <!-- Menu end -->
+        
         
         <!-- Projects section start -->
         <div id="projects">
@@ -261,8 +263,10 @@
             }
             function stayOnTop() {
                 var x = document.getElementById("myTopnav");
+                var y = document.getElementById("dropdown-content");
                 if (window.pageYOffset > sticky - x.offsetHeight) {
                     x.className = "topnav bottomnav";
+                    
                 } else {
                     x.className = "topnav toppennav";
                 }
@@ -279,6 +283,25 @@
               imgText.innerHTML = imgs.alt;
               // Show the container element (hidden with CSS)
               expandImg.parentElement.style.display = "block";
+            }
+            
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function openMenu() {
+                if(window.innerWidth < 768) {
+                      var x = document.getElementById("dropdown-content");
+                      if (x.style.display == "block") {
+                        x.style.display = "none";
+                      } else {
+                        x.style.display = "block";
+                      }
+                }
+            }
+            
+            function closeMenu() {
+                if(window.innerWidth < 768) {
+                    var x = document.getElementById("dropdown-content");
+                    x.style.display = "none";   
+                }
             }
             
         </script>
